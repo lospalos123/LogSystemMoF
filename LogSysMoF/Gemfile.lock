@@ -27,6 +27,7 @@ GEM
       tzinfo (~> 0.3.37)
     arel (4.0.0)
     atomic (1.1.14)
+    bcrypt-ruby (3.1.2)
     builder (3.1.4)
     coffee-rails (4.0.0)
       coffee-script (>= 2.2.0)
@@ -36,7 +37,10 @@ GEM
       execjs
     coffee-script-source (1.6.3)
     erubis (2.7.0)
+    excon (0.25.3)
     execjs (2.0.1)
+    heroku-api (0.3.15)
+      excon (~> 0.25.1)
     hike (1.2.3)
     i18n (0.6.5)
     jbuilder (1.5.1)
@@ -108,7 +112,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bcrypt-ruby
   coffee-rails (~> 4.0.0)
+  heroku-api (~> 0.3.15)
   jbuilder (~> 1.2)
   jquery-rails
   mysql2

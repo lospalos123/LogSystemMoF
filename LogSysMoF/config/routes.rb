@@ -1,4 +1,16 @@
 LogSysMoF::Application.routes.draw do
+  resources :sessions
+
+  get "sessions/new"
+  get "users/new"
+  get "sessions/new"
+
+  resources :admins
+
+  resources :users
+
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -53,4 +65,5 @@ LogSysMoF::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
 end

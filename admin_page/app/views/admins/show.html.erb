@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Firs name:</strong>
+  <%= @admin.fname %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @admin.lname %>
+</p>
+
+<p>
+  <strong>Date of birth:</strong>
+  <%= @admin.dob %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @admin.email %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @admin.password %>
+</p>
+
+<p>
+  <strong>Confirmation:</strong>
+  <%= @admin.pass_confirmation %>
+</p>
+
+<%= link_to 'Edit', edit_admin_path(@admin) %> |
+<%= link_to 'Back', admins_path %>
